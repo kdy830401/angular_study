@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template:`
-        <p>name2: {{ name2}}</p>
+        <p>name: {{ name }}</p>
         <p>age: {{ age }}</p>
         <p>admin: {{ admin }}</p>
         <p>address: {{ address.city }} {{ address.country }}</p>
@@ -17,7 +17,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   // title을 'Hello Angular'로 수정
   title = 'Hello Angular';
-  name2 = 'Angular';
+  name = 'Angular';
   age = 20;
   admin = true;
   address = {
@@ -28,6 +28,6 @@ export class AppComponent {
 
 
   sayHi() {
-      return `Hi, my name is ${ this.name2 }.`;
+      return `Hi, my name is ${ this.name }.`;
   }
 }
